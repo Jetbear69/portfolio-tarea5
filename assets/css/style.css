@@ -1,0 +1,301 @@
+
+strong { font-weight: 600; }
+h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color: #555; line-height: 50px; font-style: italic; }
+h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-style: italic; }
+
+img { max-width: 100%; }
+
+.medium-paragraph { font-size: 17px; line-height: 32px; }
+
+
+/***** General style, all sections *****/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+body{
+    font-family: 'lato', sans-serif;
+    color: #454545;
+    font-weight: 300;
+    background: #ffffff;
+}
+.section-container { margin: 0 auto; padding-bottom: 80px; }
+
+.section-container-gray-bg { background: #f8f8f8; }
+
+.section-container-image-bg, 
+.section-container-image-bg h2, 
+.section-container-image-bg h3 { color: #fff; }
+
+.section-container-image-bg .divider-1 span { border-color: #fff; }
+
+.section-description { margin-top: 60px; padding-bottom: 10px; }
+
+.section-description p { margin-top: 20px; padding: 0 120px; }
+.section-container-image-bg .section-description p { opacity: 0.8; }
+
+.section-bottom-button { padding-top: 60px; }
+
+
+/***** Divider *****/
+
+.divider-1 span { display: inline-block; width: 200px; border-bottom: 1px dotted #aaa; }
+
+
+/***** Top menu *****/
+
+.navbar { background: #444; transition: all .6s; backface-visibility: hidden; }
+
+.navbar.navbar-no-bg { background: #444; background: rgba(0, 0, 0, 0.2); }
+
+.navbar-dark .navbar-nav { font-size: 15px; color: #fff; text-transform: uppercase; }
+.navbar-dark .navbar-nav .nav-link { color: #fff; color: rgba(255, 255, 255, 0.8); border: 0; }
+.navbar-dark .navbar-nav .nav-link:hover { color: #fff; }
+.navbar-dark .navbar-nav .nav-link:focus { color: #fff; outline: 0; }
+
+.navbar-expand-md .navbar-nav .nav-link { padding-right: 1rem; padding-left: 1rem; }
+
+.navbar-brand {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: 300;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+/***** Top content *****/
+
+.top-content { width: 100%; padding: 0; }
+
+.top-content .carousel-item { 
+    height: 100vh; 
+    min-height: 400px; 
+}
+.top-content .carousel-item img { 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.top-content .carousel-control-prev { 
+    border-bottom: 0; 
+}
+.top-content .carousel-control-next { 
+    border-bottom: 0; 
+}
+
+.top-content .carousel-caption { 
+    padding-bottom: 60px; 
+}
+.top-content .carousel-caption h1 { 
+    padding-top: 60px; 
+    color: #fff; 
+}
+.top-content .carousel-caption h3 { 
+    color: #fff; 
+}
+.top-content .carousel-caption .carousel-caption-description { 
+    color: #fff; 
+    color: rgba(255, 255, 255, 0.8); 
+}
+
+.top-content .carousel-indicators li { 
+    width: 16px; 
+    height: 16px; 
+    margin-left: 5px; 
+    margin-right: 5px; 
+    border-radius: 50%; 
+}
+
+
+/***** Section 2 *****/
+
+.section-2-box { 
+    margin-top: 30px; 
+    text-align: left; 
+}
+.section-2-box h3 { 
+    margin-top: 0; 
+}
+.section-2-box-text .medium-paragraph { 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+a{
+    color: #333333;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover,
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+p{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #454545;
+    font-weight: 300;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #333333;
+    font-weight: 700;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 5px;
+    position: relative;
+}
+.section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 3px;
+    right: 32%;
+    background-color: #50c5fc;
+    bottom: -5px;
+
+}
+.container .section-title h1::before{
+    left: 30%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.column{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.team .team-img{
+    position: relative;
+    font-size: 0;
+    text-align: center;
+}
+
+.team {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    width: 70%;
+}
+.team-content {
+    margin-bottom: 20px;
+}
+.team-social {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    text-align: center;
+}
+.team-social a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+}
+.full-bio {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+.more-info-btn {
+    display: none;
+}
+.team:hover .more-info-btn {
+    display: inline-block;
+}
+.team .team-img img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 10px solid #f3f4fa;
+}
+
+.team .team-content{
+    padding: 80px 20px 20px 20px;
+    margin-top: -80px;
+    text-align: center;
+    background: #f3f4fa;
+    border-radius: 10px;
+}
+.team .team-content h2{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.team .team-content h3{
+    font-size: 16px;
+    font-weight: 300;
+}
+.team .team-content h4{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: italic;
+margin-bottom: 0;
+}
+.team .team-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.team .team-social a:hover{
+    background: #222222;
+}
+
+
+/***** Section 3 *****/
+
+.section-3-box { 
+    margin-top: 30px; 
+    text-align: left; 
+}
+.section-3-box h3 { 
+    margin-top: 0; 
+    padding: 0 0 10px 0; 
+}
+
+
+/***** Footer *****/
+
+footer { padding: 40px 0; }
+
